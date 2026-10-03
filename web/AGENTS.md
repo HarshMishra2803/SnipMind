@@ -12,7 +12,7 @@ PROJECT: SnipMind, a snippet manager (Next.js dashboard + Chrome extension).
 
 STACK (do not change without asking):
 - Next.js App Router, JavaScript only (no TypeScript)
-- - Tailwind CSS for styling, with our own design tokens defined in globals.css (@theme). No shadcn, no component libraries, no UI kits. Build all components from scratch
+-  Tailwind CSS for styling, with our own design tokens defined in globals.css (@theme). No shadcn, no component libraries, no UI kits. Build all components from scratch
 - Postgres on Neon, Prisma ORM, pgvector for search
 - NextAuth (Google login), Zod for input validation
 - Gemini API, server side only. Keys only in .env, never in client code
