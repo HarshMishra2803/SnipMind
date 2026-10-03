@@ -12,7 +12,7 @@ PROJECT: SnipMind, a snippet manager (Next.js dashboard + Chrome extension).
 
 STACK (do not change without asking):
 - Next.js App Router, JavaScript only (no TypeScript)
-- Plain CSS Modules + CSS variables. No Tailwind, no shadcn, no UI libraries
+- - Tailwind CSS for styling, with our own design tokens defined in globals.css (@theme). No shadcn, no component libraries, no UI kits. Build all components from scratch
 - Postgres on Neon, Prisma ORM, pgvector for search
 - NextAuth (Google login), Zod for input validation
 - Gemini API, server side only. Keys only in .env, never in client code
@@ -27,6 +27,9 @@ DESIGN RULES (strict):
 - No cursor animations, no heavy scroll animations. Only subtle 150ms transitions
 - No AI-generated photos. No stock imagery. Use real screenshots later
 - Copy must be plain, specific and written like a human developer wrote it
+- Use only our custom tokens for colors, spacing, radius and shadows. Do not use default Tailwind palette colors directly
+- Never use purple, violet or indigo colors, and never use gradient classes
+- Never use rounded-full on buttons or tags. Max radius is 8px
 
 WORKING RULES:
 - Build only what the current prompt asks. Do not add extra features
